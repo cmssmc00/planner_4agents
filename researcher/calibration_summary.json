@@ -1,0 +1,228 @@
+{
+  "self_check_passed": true,
+  "public_tests": {
+    "passed": 6,
+    "total": 9,
+    "expected_failures": 3
+  },
+  "reference": {
+    "stage_A": {
+      "passed": 18,
+      "total": 18
+    },
+    "stage_B": {
+      "passed": 21,
+      "total": 21
+    },
+    "cases": [
+      {
+        "name": "original_cli_manual_golden",
+        "passed": true
+      },
+      {
+        "name": "json_output_file",
+        "passed": true
+      },
+      {
+        "name": "csv_output_file",
+        "passed": true
+      },
+      {
+        "name": "global_dedup_across_nested_files",
+        "passed": true
+      },
+      {
+        "name": "run_identity_and_reused_call_ids",
+        "passed": true
+      },
+      {
+        "name": "grouped_values_and_sort_order",
+        "passed": true
+      },
+      {
+        "name": "incomplete_tokens_and_null_rate",
+        "passed": true
+      },
+      {
+        "name": "empty_directory_overall",
+        "passed": true
+      },
+      {
+        "name": "empty_directory_grouped",
+        "passed": true
+      },
+      {
+        "name": "malformed_json_and_schema_types",
+        "passed": true
+      },
+      {
+        "name": "validation_before_deduplication",
+        "passed": true
+      },
+      {
+        "name": "csv_quoting_unicode_and_null_rate",
+        "passed": true
+      },
+      {
+        "name": "csv_diagnostic_counts_on_stderr",
+        "passed": true
+      },
+      {
+        "name": "missing_input_helpful_failure",
+        "passed": true
+      },
+      {
+        "name": "recursive_jsonl_discovery",
+        "passed": true
+      },
+      {
+        "name": "generated_overall_137_tasks",
+        "passed": true
+      },
+      {
+        "name": "generated_grouped_137_tasks",
+        "passed": true
+      },
+      {
+        "name": "generated_csv_137_tasks",
+        "passed": true
+      },
+      {
+        "name": "strict_invalid_still_emits_report",
+        "passed": true
+      },
+      {
+        "name": "strict_duplicate_only_success",
+        "passed": true
+      },
+      {
+        "name": "strict_csv_output_file",
+        "passed": true
+      }
+    ]
+  },
+  "baseline": {
+    "stage_A": {
+      "passed": 6,
+      "total": 18
+    },
+    "stage_B": {
+      "passed": 6,
+      "total": 21
+    },
+    "cases": [
+      {
+        "name": "original_cli_manual_golden",
+        "passed": false
+      },
+      {
+        "name": "json_output_file",
+        "passed": false
+      },
+      {
+        "name": "csv_output_file",
+        "passed": false
+      },
+      {
+        "name": "global_dedup_across_nested_files",
+        "passed": false
+      },
+      {
+        "name": "run_identity_and_reused_call_ids",
+        "passed": true
+      },
+      {
+        "name": "grouped_values_and_sort_order",
+        "passed": false
+      },
+      {
+        "name": "incomplete_tokens_and_null_rate",
+        "passed": true
+      },
+      {
+        "name": "empty_directory_overall",
+        "passed": true
+      },
+      {
+        "name": "empty_directory_grouped",
+        "passed": false
+      },
+      {
+        "name": "malformed_json_and_schema_types",
+        "passed": true
+      },
+      {
+        "name": "validation_before_deduplication",
+        "passed": false
+      },
+      {
+        "name": "csv_quoting_unicode_and_null_rate",
+        "passed": false
+      },
+      {
+        "name": "csv_diagnostic_counts_on_stderr",
+        "passed": false
+      },
+      {
+        "name": "missing_input_helpful_failure",
+        "passed": true
+      },
+      {
+        "name": "recursive_jsonl_discovery",
+        "passed": true
+      },
+      {
+        "name": "generated_overall_137_tasks",
+        "passed": false
+      },
+      {
+        "name": "generated_grouped_137_tasks",
+        "passed": false
+      },
+      {
+        "name": "generated_csv_137_tasks",
+        "passed": false
+      },
+      {
+        "name": "strict_invalid_still_emits_report",
+        "passed": false
+      },
+      {
+        "name": "strict_duplicate_only_success",
+        "passed": false
+      },
+      {
+        "name": "strict_csv_output_file",
+        "passed": false
+      }
+    ]
+  },
+  "package_smoke": {
+    "four_fresh_workspaces": [
+      {
+        "system": "claude",
+        "starter_sha256": "f5778d6cd2cae10fd988f491f6e00e4d3ab8528f9c42aada4086ad3fab774893",
+        "git_clean": true
+      },
+      {
+        "system": "codex",
+        "starter_sha256": "f5778d6cd2cae10fd988f491f6e00e4d3ab8528f9c42aada4086ad3fab774893",
+        "git_clean": true
+      },
+      {
+        "system": "deepseek",
+        "starter_sha256": "f5778d6cd2cae10fd988f491f6e00e4d3ab8528f9c42aada4086ad3fab774893",
+        "git_clean": true
+      },
+      {
+        "system": "qoder",
+        "starter_sha256": "f5778d6cd2cae10fd988f491f6e00e4d3ab8528f9c42aada4086ad3fab774893",
+        "git_clean": true
+      }
+    ],
+    "same_starter": true,
+    "overwrite_refused": true,
+    "baseline_cli_works": true,
+    "snapshot_includes_new_files": true
+  }
+}

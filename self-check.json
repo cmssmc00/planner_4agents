@@ -1,0 +1,427 @@
+{
+  "mode": "self-check",
+  "self_check_passed": true,
+  "reference": {
+    "schema_version": 1,
+    "evaluator_version": "1.0",
+    "stage": "B",
+    "mode": "reference",
+    "workspace": "/Users/mingshi/Desktop/planner_probe_v1",
+    "fixture_seed": 90210,
+    "per_command_timeout_seconds": 20,
+    "passed": 21,
+    "total": 21,
+    "acceptance_passed": true,
+    "cases": [
+      {
+        "name": "original_cli_manual_golden",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "json_output_file",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "csv_output_file",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "global_dedup_across_nested_files",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "run_identity_and_reused_call_ids",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "grouped_values_and_sort_order",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "incomplete_tokens_and_null_rate",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "empty_directory_overall",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "empty_directory_grouped",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "malformed_json_and_schema_types",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "validation_before_deduplication",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "csv_quoting_unicode_and_null_rate",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "csv_diagnostic_counts_on_stderr",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "missing_input_helpful_failure",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 1
+      },
+      {
+        "name": "recursive_jsonl_discovery",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "generated_overall_137_tasks",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "generated_grouped_137_tasks",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "generated_csv_137_tasks",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "strict_invalid_still_emits_report",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 2
+      },
+      {
+        "name": "strict_duplicate_only_success",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "strict_csv_output_file",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 2
+      }
+    ]
+  },
+  "baseline": {
+    "schema_version": 1,
+    "evaluator_version": "1.0",
+    "stage": "B",
+    "mode": "candidate",
+    "workspace": "/Users/mingshi/Desktop/planner_probe_v1/starter",
+    "fixture_seed": 90210,
+    "per_command_timeout_seconds": 20,
+    "passed": 6,
+    "total": 21,
+    "acceptance_passed": false,
+    "cases": [
+      {
+        "name": "original_cli_manual_golden",
+        "passed": false,
+        "checks": [
+          "row 0.input_tokens: expected 50, got 92",
+          "row 0.output_tokens: expected 10, got 14",
+          "row 0.total_tokens: expected 60, got 106"
+        ],
+        "exit_code": 0,
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"schema_version\": 1,\n  \"group_by\": [],\n  \"rows\": [\n    {\n      \"model\": \"\",\n      \"benchmark\": \"\",\n      \"completed_tasks\": 2,\n      \"successful_tasks\": 1,\n      \"incomplete_tasks\": 1,\n      \"success_rate\": 0.5,\n      \"input_tokens\": 92,\n      \"output_tokens\": 14,\n      \"total_tokens\": 106\n    }\n  ],\n  \"diagnostics\": {\n    \"invalid_records\": 0,\n    \"duplicate_records\": 0\n  }\n}\n"
+      },
+      {
+        "name": "json_output_file",
+        "passed": false,
+        "checks": [
+          "row 0.input_tokens: expected 50, got 92",
+          "row 0.output_tokens: expected 10, got 14",
+          "row 0.total_tokens: expected 60, got 106"
+        ],
+        "exit_code": 0,
+        "stderr_excerpt": "",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "csv_output_file",
+        "passed": false,
+        "checks": [
+          "exit code: expected 0, got 2",
+          "report could not be read: [Errno 2] No such file or directory: '/var/folders/g7/p7mhm3fj727f5pqdt0w6vpl40000gn/T/planner-probe-eval-tsboh8um/csv_output_file.csv'"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --format csv\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "global_dedup_across_nested_files",
+        "passed": false,
+        "checks": [
+          "diagnostics.duplicate_records: expected 2, got 0",
+          "row 0.completed_tasks: expected 2, got 4",
+          "row 0.successful_tasks: expected 1, got 2",
+          "row 0.input_tokens: expected 50, got 168",
+          "row 0.output_tokens: expected 10, got 26",
+          "row 0.total_tokens: expected 60, got 194"
+        ],
+        "exit_code": 0,
+        "stderr_excerpt": "",
+        "stdout_excerpt": "{\n  \"schema_version\": 1,\n  \"group_by\": [],\n  \"rows\": [\n    {\n      \"model\": \"\",\n      \"benchmark\": \"\",\n      \"completed_tasks\": 4,\n      \"successful_tasks\": 2,\n      \"incomplete_tasks\": 1,\n      \"success_rate\": 0.5,\n      \"input_tokens\": 168,\n      \"output_tokens\": 26,\n      \"total_tokens\": 194\n    }\n  ],\n  \"diagnostics\": {\n    \"invalid_records\": 0,\n    \"duplicate_records\": 0\n  }\n}\n"
+      },
+      {
+        "name": "run_identity_and_reused_call_ids",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "grouped_values_and_sort_order",
+        "passed": false,
+        "checks": [
+          "exit code: expected 0, got 2",
+          "report could not be read: Expecting value: line 1 column 1 (char 0)"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --group-by model,benchmark\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "incomplete_tokens_and_null_rate",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "empty_directory_overall",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "empty_directory_grouped",
+        "passed": false,
+        "checks": [
+          "exit code: expected 0, got 2",
+          "report could not be read: Expecting value: line 1 column 1 (char 0)"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --group-by model,benchmark\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "malformed_json_and_schema_types",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "validation_before_deduplication",
+        "passed": false,
+        "checks": [
+          "diagnostics.duplicate_records: expected 1, got 0",
+          "row 0.completed_tasks: expected 1, got 2",
+          "row 0.successful_tasks: expected 1, got 2",
+          "row 0.input_tokens: expected 30, got 128",
+          "row 0.output_tokens: expected 5, got 18",
+          "row 0.total_tokens: expected 35, got 146"
+        ],
+        "exit_code": 0,
+        "stderr_excerpt": "Skipped 1 invalid record(s).\n",
+        "stdout_excerpt": "{\n  \"schema_version\": 1,\n  \"group_by\": [],\n  \"rows\": [\n    {\n      \"model\": \"\",\n      \"benchmark\": \"\",\n      \"completed_tasks\": 2,\n      \"successful_tasks\": 2,\n      \"incomplete_tasks\": 0,\n      \"success_rate\": 1.0,\n      \"input_tokens\": 128,\n      \"output_tokens\": 18,\n      \"total_tokens\": 146\n    }\n  ],\n  \"diagnostics\": {\n    \"invalid_records\": 1,\n    \"duplicate_records\": 0\n  }\n}\n"
+      },
+      {
+        "name": "csv_quoting_unicode_and_null_rate",
+        "passed": false,
+        "checks": [
+          "exit code: expected 0, got 2",
+          "report could not be read: CSV columns differ from the required ordered columns"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --group-by model,benchmark --format csv\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "csv_diagnostic_counts_on_stderr",
+        "passed": false,
+        "checks": [
+          "exit code: expected 0, got 2",
+          "report could not be read: CSV columns differ from the required ordered columns"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --format csv\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "missing_input_helpful_failure",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 1
+      },
+      {
+        "name": "recursive_jsonl_discovery",
+        "passed": true,
+        "checks": [
+          "all required values, output structure and exit behavior match"
+        ],
+        "exit_code": 0
+      },
+      {
+        "name": "generated_overall_137_tasks",
+        "passed": false,
+        "checks": [
+          "diagnostics.duplicate_records: expected 16, got 0",
+          "row 0.completed_tasks: expected 117, got 130",
+          "row 0.successful_tasks: expected 87, got 97",
+          "row 0.incomplete_tasks: expected 20, got 23",
+          "row 0.success_rate: expected 0.7435897435897436, got 0.7461538461538462",
+          "row 0.input_tokens: expected 100838, got 200384",
+          "row 0.output_tokens: expected 19570, got 26625",
+          "row 0.total_tokens: expected 120408, got 227009"
+        ],
+        "exit_code": 0,
+        "stderr_excerpt": "Skipped 2 invalid record(s).\n",
+        "stdout_excerpt": "{\n  \"schema_version\": 1,\n  \"group_by\": [],\n  \"rows\": [\n    {\n      \"model\": \"\",\n      \"benchmark\": \"\",\n      \"completed_tasks\": 130,\n      \"successful_tasks\": 97,\n      \"incomplete_tasks\": 23,\n      \"success_rate\": 0.7461538461538462,\n      \"input_tokens\": 200384,\n      \"output_tokens\": 26625,\n      \"total_tokens\": 227009\n    }\n  ],\n  \"diagnostics\": {\n    \"invalid_records\": 2,\n    \"duplicate_records\": 0\n  }\n}\n"
+      },
+      {
+        "name": "generated_grouped_137_tasks",
+        "passed": false,
+        "checks": [
+          "exit code: expected 0, got 2",
+          "report could not be read: Expecting value: line 1 column 1 (char 0)"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --group-by model,benchmark\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "generated_csv_137_tasks",
+        "passed": false,
+        "checks": [
+          "exit code: expected 0, got 2",
+          "report could not be read: CSV columns differ from the required ordered columns"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --group-by model,benchmark --format csv\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "strict_invalid_still_emits_report",
+        "passed": false,
+        "checks": [
+          "report could not be read: Expecting value: line 1 column 1 (char 0)"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --strict\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "strict_duplicate_only_success",
+        "passed": false,
+        "checks": [
+          "exit code: expected 0, got 2",
+          "report could not be read: Expecting value: line 1 column 1 (char 0)"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --strict\n",
+        "stdout_excerpt": ""
+      },
+      {
+        "name": "strict_csv_output_file",
+        "passed": false,
+        "checks": [
+          "report could not be read: [Errno 2] No such file or directory: '/var/folders/g7/p7mhm3fj727f5pqdt0w6vpl40000gn/T/planner-probe-eval-tsboh8um/strict_csv_output_file.csv'"
+        ],
+        "exit_code": 2,
+        "stderr_excerpt": "usage: python -m agentstats [-h] [--output OUTPUT] input\npython -m agentstats: error: unrecognized arguments: --strict --format csv\n",
+        "stdout_excerpt": ""
+      }
+    ]
+  }
+}

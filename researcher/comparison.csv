@@ -1,0 +1,1 @@
+system,trial,condition,model,version,stage,explicit_plan_observed,plan_revision_observed,tool_calls_observed,test_runs_observed,feedback_adjustment_observed,agent_claimed_complete,acceptance_passed,passed_checks,total_checks,elapsed_minutes,input_tokens,output_tokens,usage_scope,stop_reason,main_observation
